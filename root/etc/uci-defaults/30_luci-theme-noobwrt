@@ -17,7 +17,7 @@ touch /etc/config/noobwrt
 uci get noobwrt.global >/dev/null 2>&1 || uci set noobwrt.global=global
 
 # Set each global option only if not already present
-uci get noobwrt.global.mode                  >/dev/null 2>&1 || uci set noobwrt.global.mode=normal
+uci get noobwrt.global.mode                  >/dev/null 2>&1 || uci set noobwrt.global.mode=dark
 uci get noobwrt.global.primary               >/dev/null 2>&1 || uci set noobwrt.global.primary='#7689f4'
 uci get noobwrt.global.dark_primary          >/dev/null 2>&1 || uci set noobwrt.global.dark_primary='#7c8ff5'
 uci get noobwrt.global.blur                  >/dev/null 2>&1 || uci set noobwrt.global.blur=10
